@@ -7,9 +7,25 @@
         <groupId>com.wordplay.unit</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>unit-console-api</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.wordplay.unit</groupId>
+            <artifactId>unit-starter-api-dependency</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

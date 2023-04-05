@@ -2,15 +2,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.wordplay.unit</groupId>
+        <artifactId>unit-dependencies</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.wordplay.unit</groupId>
     <artifactId>unit-console</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>unit-console-service-parent</module>
         <module>unit-console-control-parent</module>
     </modules>
-
 
 </project>

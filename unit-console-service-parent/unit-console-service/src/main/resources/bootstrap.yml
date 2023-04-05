@@ -1,0 +1,18 @@
+# 注册到 NACOS，使用如下配置       
+spring:
+  profiles:
+    active: 
+    - payn                            # 本机标识，与spring.application.name可拼接成本机配置名称，例如platform-console-service-payn.yml
+  application:
+    name: unit-console-service        # 服务名称，必填
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      config:
+        shared-configs:
+        - common.yml
+        namespace: unit-dev             # 命名空间，根据实例情况填写
+        server-addr: 127.0.0.1:8848     # nacos地址，根据实例情况填写
+        file-extension: yml
+
