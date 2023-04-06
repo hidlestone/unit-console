@@ -22,7 +22,7 @@ public interface MailHistoryClient {
 	@GetMapping("/get")
 	ResponseResult<MailHistoryResponse> get(@RequestParam Long id);
 
-	@PostMapping("/list")
-	ResponseResult<Leaf<MailHistoryResponse>> list(@RequestBody MailHistoryRequest request);
+	@PostMapping("/page")
+	ResponseResult<Leaf<MailHistoryResponse>> page(@RequestBody MailHistoryRequest request);
 
 }
