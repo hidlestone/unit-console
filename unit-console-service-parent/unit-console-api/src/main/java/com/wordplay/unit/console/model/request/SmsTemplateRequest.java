@@ -1,5 +1,6 @@
 package com.wordplay.unit.console.model.request;
 
+import com.wordplay.unit.console.model.enums.ContentTypeEnum;
 import com.wordplay.unit.starter.api.request.BasePageRequest;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -26,7 +27,7 @@ public class SmsTemplateRequest extends BasePageRequest {
 	private String from;
 
 	@ApiModelProperty("0-简单，1-模板")
-	private Byte contentType;
+	private ContentTypeEnum contentType;
 
 	@ApiModelProperty("内容")
 	private String content;

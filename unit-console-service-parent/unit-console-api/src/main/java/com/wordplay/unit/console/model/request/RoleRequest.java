@@ -6,7 +6,6 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.validation.constraints.NotNull;
 import java.util.List;
 
 /**
@@ -21,21 +20,28 @@ public class RoleRequest extends BasePageRequest {
 
 	@ApiModelProperty("主键")
 	private Long id;
-
+	@ApiModelProperty("角色编码")
+	private String roleCode;
+	@ApiModelProperty("角色名称")
+	private String roleName;
+	@ApiModelProperty("角色描述")
+	private String roleDesc;
+	@ApiModelProperty("角色关联的菜单")
+	private List<MenuRequest> menuRequestList;
+	
+	/*@ApiModelProperty("主键")
+	private Long id;
 	@NotNull(message = "角色编码不能为空")
 	@ApiModelProperty("角色编码")
 	private String roleCode;
-
 	@NotNull(message = "角色名称不能为空")
 	@ApiModelProperty("角色名称")
 	private String roleName;
-
 	@NotNull(message = "角色描述不能为空")
 	@ApiModelProperty("角色描述")
 	private String roleDesc;
-
 	@NotNull(message = "角色关联的菜单不能为空")
 	@ApiModelProperty("角色关联的菜单")
-	private List<MenuRequest> menuRequestList;
+	private List<MenuRequest> menuRequestList;*/
 
 }
